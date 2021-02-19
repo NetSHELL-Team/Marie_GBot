@@ -22,10 +22,7 @@ hoi {}, my name is {}! if you have any questions about how to use me please give
 
 im a group manager bot maintained by  [this person](tg://user?id={}).
 
-My future updates will be put into This Channel - @MarieChechi & My Support Group @InFoTelGroup.
-
-This is my [Deploy Code](https://heroku.com/deploy?template=https://github.com/TGExplore/Marie-2.0-English),
-you can create clone same like me..
+My Support Group @Yui_Official
 
 For more commands click /help...
 
@@ -138,6 +135,27 @@ def start(bot: Bot, update: Update, args: List[str]):
 
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
+                
+                
+                
+                
+                else:
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_photo(
+                Yui_Gbot_IMG,
+                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="☺️Help",
+                                                                       callback_data="help_back".format(bot.username)),
+                                                                                   InlineKeyboardButton(text="Support Group 💬",
+                                                                       url="t.me/Yui_Official")],
+                                                                                   [InlineKeyboardButton(text="Add Me 🔰",
+                                                                       url="t.me/{}?startgroup=true".format(bot.username)),
+                                                                                   InlineKeyboardButton(text="improve Me 🧲",
+                                                                       url="https://github.com/NetSHELL-Team/YUi_GBot_Global")
+                                                                                 ]]))
+                
+                
+                
 
         else:
             first_name = update.effective_user.first_name
