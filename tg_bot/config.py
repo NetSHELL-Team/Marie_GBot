@@ -7,7 +7,7 @@ class Config(object):
     OWNER_USERNAME = "NetSHEEL"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgresql://marie_usr:M7F7DbkBcCSZ@144.91.97.206:5432/mariedb'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgresql://marie_usr:M7F7DbkBcCSZ@localhost:5432/mariedb'  # needed for any database modules
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
