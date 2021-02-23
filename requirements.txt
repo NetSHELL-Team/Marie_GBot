@@ -17,3 +17,12 @@ zalgo_text
 pynewtonmath
 bs4
 telegraph
+
+
+datetime
+html
+textwrap
+bs4
+jikanpy
+requests
+
