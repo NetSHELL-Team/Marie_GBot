@@ -21,6 +21,4 @@ telegraph
 
 datetime
 bs4
-jikanpy
-requests
 
