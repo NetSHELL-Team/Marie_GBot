@@ -3,7 +3,7 @@ import html
 import textwrap
 
 import bs4
-import jikanpy
+
 import requests
 from SaitamaRobot import dispatcher
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler
