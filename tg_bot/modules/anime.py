@@ -8,7 +8,7 @@ import requests
 from tg_bot import dispatcher
 from tg_bot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
-from telegram.ext import CallbackContext, run_async
+
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
